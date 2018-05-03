@@ -1,2 +1,2 @@
 # mobius-string
-String functions
+Mobius library that provides string functions
