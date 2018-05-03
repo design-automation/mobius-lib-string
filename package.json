@@ -1,10 +1,10 @@
 {
-    "name": "mobius-array",
+    "name": "mobius-string",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "author": "Patrick Janssen",
-    "description": "Mobius library that provides array functions",
-    "homepage": "https://github.com/design-automation/mobius-array#readme",
+    "description": "Mobius library that provides string functions.",
+    "homepage": "https://github.com/design-automation/mobius-string#readme",
     "types": "dist/index.d.ts",
     "main": "dist/index.js",
     "directories": {
@@ -16,14 +16,13 @@
         "build": "tsc",
         "test": "karma start ./karma.conf.ts",
         "testsr": "karma start ./karma.conf.ts --single-run",
-        "docs": "typedoc --out ./docs --json ./docs_json/mobius-array.json ./src/typescript --module commonjs --exclude \"**/*+(dev|tests).ts\" --mode modules  --excludeExternals"
+        "docs": "typedoc --out ./docs --json ./docs_json/mobius-string.json ./src/typescript --module commonjs --exclude \"**/*+(dev|tests).ts\" --mode modules  --excludeExternals"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/design-automation/mobius-array.git"
+        "url": "git+https://github.com/design-automation/mobius-string.git"
     },
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "@types/jasmine": "^2.8.6",
         "@types/node": "^9.6.7",
@@ -46,7 +45,7 @@
         "typescript": "^2.8.3"
     },
     "bugs": {
-        "url": "https://github.com/design-automation/mobius-array/issues"
+        "url": "https://github.com/design-automation/mobius-string/issues"
     },
     "keywords": [
         "array"

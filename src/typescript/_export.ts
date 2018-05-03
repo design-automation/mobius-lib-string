@@ -1,8 +1,5 @@
-import * as create from "./create";
-export {create};
+import * as modify from "./modify";
+export {modify};
 
-import * as func from "./func";
-export {func};
-
-import * as sort from "./sort";
-export {sort};
+import * as analyse from "./analyse";
+export {analyse};
