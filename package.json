@@ -1,7 +1,7 @@
 {
     "name": "mobius-string",
     "license": "MIT",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "Patrick Janssen",
     "description": "Mobius library that provides string functions.",
     "homepage": "https://github.com/phtj/mobius-string#readme",
