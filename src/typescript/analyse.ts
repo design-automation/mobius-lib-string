@@ -166,3 +166,5 @@ export function localeCompare(str: string, comp_str: string): number {
     if (comp_str === undefined) {throw new Error("Invalid arg: search_str must be defined.");}
     return str.localeCompare(comp_str);
 }
+
+
