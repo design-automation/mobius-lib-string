@@ -12,7 +12,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/_export.ts",
+			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/_export.ts",
 			"sources": [
 				{
 					"fileName": "_export.ts",
@@ -29,7 +29,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/analyse.ts",
+			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/analyse.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
@@ -177,7 +177,7 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Returns the position index of the first occurance of the specified search string within a string.\nIf the specified sub-string cannot be found, then returns -1.",
-								"returns": "Number that represents last position of search_str in str.\n\n<h3>Example:</h3>\n<code>string = \"Banana\"<br/>\nsearch = str.Eval.indexOf(string,\"a\")<br/></code>\n<br/>Expected value of search is 1.\n"
+								"returns": "Number that represents first position of search_str in str.\n\n<h3>Example:</h3>\n<code>string = \"Banana\"<br/>\nsearch = str.Eval.indexOf(string,\"a\")<br/></code>\n<br/>Expected value of search is 1.\n"
 							},
 							"parameters": [
 								{
@@ -557,7 +557,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/convert.ts",
+			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/convert.ts",
 			"comment": {
 				"shortText": "Functions for converting strings to other types."
 			},
@@ -849,7 +849,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/modify.ts",
+			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/modify.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
