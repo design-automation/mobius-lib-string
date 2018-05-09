@@ -54,7 +54,7 @@ export function toInt(str: string, defaultZero: boolean): number {
  */
 export function toFloats(strs: string[], defaultZero: boolean): number[] {
     if (!Array.isArray(strs)) {throw new Error("Invalid arg: strs must be an array of strings.");}
-    return strs.map((str) => toFloat(str, defaultZero))
+    return strs.map((str) => toFloat(str, defaultZero));
 }
 
 /**
@@ -69,5 +69,5 @@ export function toFloats(strs: string[], defaultZero: boolean): number[] {
  */
 export function toInts(strs: string[], defaultZero: boolean): number[] {
     if (!Array.isArray(strs)) {throw new Error("Invalid arg: strs must be an array of strings.");}
-    return strs.map((str) => toInt(str, defaultZero))
+    return strs.map((str) => toInt(str, defaultZero));
 }

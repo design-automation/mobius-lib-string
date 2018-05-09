@@ -114,7 +114,7 @@ export function search(str: string, search_str: string): number {
  *
  * @param str String to check.
  * @param search_str Sub-string to search for. (Case sensitive)
- * @returns Number that represents last position of search_str in str.
+ * @returns Number that represents first position of search_str in str.
  *
  * <h3>Example:</h3>
  * <code>string = "Banana"<br/>
@@ -166,5 +166,3 @@ export function localeCompare(str: string, comp_str: string): number {
     if (comp_str === undefined) {throw new Error("Invalid arg: search_str must be defined.");}
     return str.localeCompare(comp_str);
 }
-
-
