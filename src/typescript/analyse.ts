@@ -22,13 +22,10 @@
  * @param str String to check.
  * @param start_str Start tring.
  * @returns True if str starts with search_str, false otherwise.
- *
- * <h3>Example:</h3>
- * <code>
- * string = "Orange"<br/>
- * result = str.Eval.startsWith(string,"Or")<br/>
- * </code>
- * <br/>Expected value of result is true.
+ * @example string = "Orange"
+ * result = str.Eval.startsWith(string,"Or")
+ * 
+ * Expected value of result is true.
  */
 export function startsWith(str: string, start_str: string): boolean {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -42,11 +39,10 @@ export function startsWith(str: string, start_str: string): boolean {
  * @param str String to check.
  * @param end_str End string.
  * @returns True if str ends with search_str, false otherwise.
+ * @example string = "Orange"
+ * result = str.Eval.endsWith(string,"ge")
  *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * result = str.Eval.endsWith(string,"ge")<br/></code>
- * <br/>Expected value of result is true.
+ * Expected value of result is true.
  */
 export function endsWith(str: string, end_str: string): boolean {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -60,11 +56,10 @@ export function endsWith(str: string, end_str: string): boolean {
  * @param str String to search.
  * @param search_str Sub-string to search for.
  * @returns True if str contains search_str, false otherwise.
- *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * incl = str.Eval.includes(string,"an")<br/></code>
- * <br/>Expected value of incl is true.
+ * @example string = "Orange"
+ * incl = str.Eval.includes(string,"an")
+ * 
+ * Expected value of incl is true.
  */
 export function includes(str: string, search_str: string): boolean {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -77,11 +72,10 @@ export function includes(str: string, search_str: string): boolean {
  *
  * @param str String to find length of.
  * @returns Length of string.
- *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * length = str.Eval.len(string)<br/></code>
- * <br/>Expected value of length is 6.
+ * @example string = "Orange"
+ * length = str.Eval.len(string)
+ * 
+ * Expected value of length is 6.
  */
 export function len(str: string): number {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -96,11 +90,10 @@ export function len(str: string): number {
  * @param str String to check.
  * @param search_str Regular expression to search for.
  * @returns Number that represents first position of search_str in str.
- *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * search = str.Eval.search(string,"e")<br/></code>
- * <br/>Expected value of search is 5.
+ * @example string = "Orange"
+ * search = str.Eval.search(string,"e")
+ * 
+ * Expected value of search is 5.
  */
 export function search(str: string, search_str: string): number {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -115,11 +108,10 @@ export function search(str: string, search_str: string): number {
  * @param str String to check.
  * @param search_str Sub-string to search for. (Case sensitive)
  * @returns Number that represents first position of search_str in str.
- *
- * <h3>Example:</h3>
- * <code>string = "Banana"<br/>
- * search = str.Eval.indexOf(string,"a")<br/></code>
- * <br/>Expected value of search is 1.
+ * @example string = "Banana"
+ * search = str.Eval.indexOf(string,"a")
+ * 
+ * Expected value of search is 1.
  */
 export function indexOf(str: string, search_str: string): number {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -135,11 +127,10 @@ export function indexOf(str: string, search_str: string): number {
  * @param str String to check.
  * @param search_str Sub-string to search for. (Case sensitive)
  * @returns Number that represents last position of search_str in str.
- *
- * <h3>Example:</h3>
- * <code>string = "Banana"<br/>
- * search = str.Eval.lastIndexOf(string,"a")<br/></code>
- * <br/>Expected value of search is 5.
+ * @example string = "Banana"
+ * search = str.Eval.lastIndexOf(string,"a")
+ * 
+ * Expected value of search is 5.
  */
 export function lastIndexOf(str: string, search_str: string): number {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -154,12 +145,11 @@ export function lastIndexOf(str: string, search_str: string): number {
  * @param str String to check.
  * @param comp_str String to compare against.
  * @returns Number indicating whether str comes before or after comp_str in sort order. (-1: before, 0: equal, 1: after)
+ * @example string = "Orange"
+ * comp_str = "Apple"
+ * comp = str.Eval.localeCompare(string,comp_str)
  *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * comp_str = "Apple"<br/>
- * comp = str.Eval.localeCompare(string,comp_str)<br/></code>
- * <br/>Expected value of comp is 1.
+ * Expected value of comp is 1.
  */
 export function localeCompare(str: string, comp_str: string): number {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}

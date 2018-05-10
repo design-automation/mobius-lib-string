@@ -101,7 +101,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/modify.ts#L32">modify.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/modify.ts#L31">modify.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -109,6 +109,13 @@
 									<p>Searches for and replaces the specified search string in a string.
 									The search string can also be a regular expression.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										newString = str.Modify.Replace(string,&quot;O&quot;,&quot;Ar&quot;)</p>
+										<p>Expected value of newString is &quot;Arrange&quot;.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -133,10 +140,6 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>New string with replaced characters.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-newString = str.Modify.Replace(string,&quot;O&quot;,&quot;Ar&quot;)<br/></code>
-							<br/>Expected value of newString is &quot;Arrange&quot;.</p>
 						</li>
 					</ul>
 				</section>
@@ -150,13 +153,20 @@ newString = str.Modify.Replace(string,&quot;O&quot;,&quot;Ar&quot;)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/modify.ts#L51">modify.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/modify.ts#L49">modify.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Splits a string into a list of substrings using a specified separator string.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										split = str.Modify.split(string,&quot;a&quot;)</p>
+										<p>Expected value of split is [&quot;Or&quot;,&quot;nge&quot;].</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -175,10 +185,6 @@ newString = str.Modify.Replace(string,&quot;O&quot;,&quot;Ar&quot;)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 							<p>List of substrings.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-split = str.Modify.split(string,&quot;a&quot;)<br/></code>
-							<br/>Expected value of split is [&quot;Or&quot;,&quot;nge&quot;].</p>
 						</li>
 					</ul>
 				</section>
@@ -192,7 +198,7 @@ split = str.Modify.split(string,&quot;a&quot;)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/modify.ts#L71">modify.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/modify.ts#L68">modify.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,6 +206,13 @@ split = str.Modify.split(string,&quot;a&quot;)<br/></code>
 									<p>Extracts characters in a string between two specified indices and returns it as a new string.
 									Start index is inclusive and end index is exclusive.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										substring = str.Modify.substring(string,1,4)</p>
+										<p>Expected value of substring is &quot;ran&quot;.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -224,10 +237,6 @@ split = str.Modify.split(string,&quot;a&quot;)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>New string with extracted characters.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-substring = str.Modify.substring(string,1,4)<br/></code>
-							<br/>Expected value of substring is &quot;ran&quot;.</p>
 						</li>
 					</ul>
 				</section>
@@ -241,13 +250,20 @@ substring = str.Modify.substring(string,1,4)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/modify.ts#L87">modify.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/modify.ts#L83">modify.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Converts a string to lowercase letters.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										newstring = str.Modify.toLowercase(string)</p>
+										<p>Expected value of newstring is &quot;orange&quot;.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -260,10 +276,6 @@ substring = str.Modify.substring(string,1,4)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>New string with lowercase characters.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-newstring = str.Modify.toLowercase(string)<br/></code>
-							<br/>Expected value of newstring is &quot;orange&quot;.</p>
 						</li>
 					</ul>
 				</section>
@@ -277,13 +289,20 @@ newstring = str.Modify.toLowercase(string)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/modify.ts#L119">modify.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/modify.ts#L113">modify.ts:113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Converts a value into a string.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>value = [500,800]
+										newstring = str.Modify.toUppercase(value)</p>
+										<p>Expected value of newstring is &quot;500,800&quot;.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -296,10 +315,6 @@ newstring = str.Modify.toLowercase(string)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>New string.</p>
-							<p><h3>Example:</h3>
-								<code>value = [500,800]<br/>
-newstring = str.Modify.toUppercase(value)<br/></code>
-							<br/>Expected value of newstring is &quot;500,800&quot;.</p>
 						</li>
 					</ul>
 				</section>
@@ -313,13 +328,20 @@ newstring = str.Modify.toUppercase(value)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/modify.ts#L103">modify.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/modify.ts#L98">modify.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Converts a string to uppercase letters.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										newstring = str.Modify.toUppercase(string)</p>
+										<p>Expected value of newstring is &quot;ORANGE&quot;.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -332,10 +354,6 @@ newstring = str.Modify.toUppercase(value)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>New string with uppercase characters.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-newstring = str.Modify.toUppercase(string)<br/></code>
-							<br/>Expected value of newstring is &quot;ORANGE&quot;.</p>
 						</li>
 					</ul>
 				</section>

@@ -103,13 +103,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L51">analyse.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L47">analyse.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Checks if a string ends with a specified end string.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										result = str.Eval.endsWith(string,&quot;ge&quot;)</p>
+										<p>Expected value of result is true.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -128,10 +135,6 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>True if str ends with search_str, false otherwise.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-result = str.Eval.endsWith(string,&quot;ge&quot;)<br/></code>
-							<br/>Expected value of result is true.</p>
 						</li>
 					</ul>
 				</section>
@@ -145,13 +148,20 @@ result = str.Eval.endsWith(string,&quot;ge&quot;)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L69">analyse.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L64">analyse.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Checks if a string contains a specified search string.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										incl = str.Eval.includes(string,&quot;an&quot;)</p>
+										<p>Expected value of incl is true.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -170,10 +180,6 @@ result = str.Eval.endsWith(string,&quot;ge&quot;)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>True if str contains search_str, false otherwise.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-incl = str.Eval.includes(string,&quot;an&quot;)<br/></code>
-							<br/>Expected value of incl is true.</p>
 						</li>
 					</ul>
 				</section>
@@ -187,7 +193,7 @@ incl = str.Eval.includes(string,&quot;an&quot;)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L124">analyse.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L116">analyse.ts:116</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,6 +201,13 @@ incl = str.Eval.includes(string,&quot;an&quot;)<br/></code>
 									<p>Returns the position index of the first occurance of the specified search string within a string.
 									If the specified sub-string cannot be found, then returns -1.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Banana&quot;
+										search = str.Eval.indexOf(string,&quot;a&quot;)</p>
+										<p>Expected value of search is 1.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -213,10 +226,6 @@ incl = str.Eval.includes(string,&quot;an&quot;)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>Number that represents first position of search_str in str.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Banana&quot;<br/>
-search = str.Eval.indexOf(string,&quot;a&quot;)<br/></code>
-							<br/>Expected value of search is 1.</p>
 						</li>
 					</ul>
 				</section>
@@ -230,7 +239,7 @@ search = str.Eval.indexOf(string,&quot;a&quot;)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L144">analyse.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L135">analyse.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -239,6 +248,13 @@ search = str.Eval.indexOf(string,&quot;a&quot;)<br/></code>
 										If the specified sub-string cannot be found, then returns -1.
 									(The string is searched starting from its end)</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Banana&quot;
+										search = str.Eval.lastIndexOf(string,&quot;a&quot;)</p>
+										<p>Expected value of search is 5.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -257,10 +273,6 @@ search = str.Eval.indexOf(string,&quot;a&quot;)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>Number that represents last position of search_str in str.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Banana&quot;<br/>
-search = str.Eval.lastIndexOf(string,&quot;a&quot;)<br/></code>
-							<br/>Expected value of search is 5.</p>
 						</li>
 					</ul>
 				</section>
@@ -274,13 +286,20 @@ search = str.Eval.lastIndexOf(string,&quot;a&quot;)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L86">analyse.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L80">analyse.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the number of characters in a string.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										length = str.Eval.len(string)</p>
+										<p>Expected value of length is 6.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -293,10 +312,6 @@ search = str.Eval.lastIndexOf(string,&quot;a&quot;)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>Length of string.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-length = str.Eval.len(string)<br/></code>
-							<br/>Expected value of length is 6.</p>
 						</li>
 					</ul>
 				</section>
@@ -310,7 +325,7 @@ length = str.Eval.len(string)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L164">analyse.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L154">analyse.ts:154</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,6 +333,14 @@ length = str.Eval.len(string)<br/></code>
 									<p>Compares two strings in the current locale (language setting).
 									(In general, the order is as follows: digits (0-9), upper-case (A-Z), then lower-case (a-z))</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+											comp_str = &quot;Apple&quot;
+										comp = str.Eval.localeCompare(string,comp_str)</p>
+										<p>Expected value of comp is 1.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -336,11 +359,6 @@ length = str.Eval.len(string)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>Number indicating whether str comes before or after comp_str in sort order. (-1: before, 0: equal, 1: after)</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-comp_str = &quot;Apple&quot;<br/>
-comp = str.Eval.localeCompare(string,comp_str)<br/></code>
-							<br/>Expected value of comp is 1.</p>
 						</li>
 					</ul>
 				</section>
@@ -354,7 +372,7 @@ comp = str.Eval.localeCompare(string,comp_str)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L105">analyse.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L98">analyse.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -363,6 +381,13 @@ comp = str.Eval.localeCompare(string,comp_str)<br/></code>
 										If the specified sub-string cannot be found, then returns -1.
 									(This function uses regular expressions, if searching using a string, use str.Eval.indexOf)</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										search = str.Eval.search(string,&quot;e&quot;)</p>
+										<p>Expected value of search is 5.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -381,10 +406,6 @@ comp = str.Eval.localeCompare(string,comp_str)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>Number that represents first position of search_str in str.</p>
-							<p><h3>Example:</h3>
-								<code>string = &quot;Orange&quot;<br/>
-search = str.Eval.search(string,&quot;e&quot;)<br/></code>
-							<br/>Expected value of search is 5.</p>
 						</li>
 					</ul>
 				</section>
@@ -398,13 +419,20 @@ search = str.Eval.search(string,&quot;e&quot;)<br/></code>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/390d150/src/typescript/analyse.ts#L33">analyse.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-string/blob/7fbb1a1/src/typescript/analyse.ts#L30">analyse.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Checks if a string starts with the specified start string.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>string = &quot;Orange&quot;
+										result = str.Eval.startsWith(string,&quot;Or&quot;)</p>
+										<p>Expected value of result is true.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -423,12 +451,6 @@ search = str.Eval.search(string,&quot;e&quot;)<br/></code>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>True if str starts with search_str, false otherwise.</p>
-							<p><h3>Example:</h3>
-								<code>
-string = &quot;Orange&quot;<br/>
-result = str.Eval.startsWith(string,&quot;Or&quot;)<br/>
-</code>
-							<br/>Expected value of result is true.</p>
 						</li>
 					</ul>
 				</section>

@@ -23,11 +23,10 @@
  * @param search_str Sub-string or regular expression to search for.
  * @param new_str Replacement string.
  * @returns New string with replaced characters.
- *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * newString = str.Modify.Replace(string,"O","Ar")<br/></code>
- * <br/>Expected value of newString is "Arrange".
+ * @example string = "Orange"
+ * newString = str.Modify.Replace(string,"O","Ar")
+ * 
+ * Expected value of newString is "Arrange".
  */
 export function replace(str: string, search_str: string, new_str: string): string {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -42,11 +41,10 @@ export function replace(str: string, search_str: string, new_str: string): strin
  * @param str String.
  * @param separator String of characters used to split string.
  * @returns List of substrings.
- *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * split = str.Modify.split(string,"a")<br/></code>
- * <br/>Expected value of split is ["Or","nge"].
+ * @example string = "Orange"
+ * split = str.Modify.split(string,"a")
+ * 
+ * Expected value of split is ["Or","nge"].
  */
 export function split(str: string, separator: string): string[] {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -62,11 +60,10 @@ export function split(str: string, separator: string): string[] {
  * @param start Zero-based index to start extracting characters (inclusive).
  * @param end Zero-based index to stop extracting characters (exclusive).
  * @returns New string with extracted characters.
- *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * substring = str.Modify.substring(string,1,4)<br/></code>
- * <br/>Expected value of substring is "ran".
+ * @example string = "Orange"
+ * substring = str.Modify.substring(string,1,4)
+ * 
+ * Expected value of substring is "ran".
  */
 export function substring(str: string, start: number, end: number): string {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -78,11 +75,10 @@ export function substring(str: string, start: number, end: number): string {
  *
  * @param str String.
  * @returns New string with lowercase characters.
- *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * newstring = str.Modify.toLowercase(string)<br/></code>
- * <br/>Expected value of newstring is "orange".
+ * @example string = "Orange"
+ * newstring = str.Modify.toLowercase(string)
+ * 
+ * Expected value of newstring is "orange".
  */
 export function toLowercase(str: string): string {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -94,11 +90,10 @@ export function toLowercase(str: string): string {
  *
  * @param str String.
  * @returns New string with uppercase characters.
+ * @example string = "Orange"
+ * newstring = str.Modify.toUppercase(string)
  *
- * <h3>Example:</h3>
- * <code>string = "Orange"<br/>
- * newstring = str.Modify.toUppercase(string)<br/></code>
- * <br/>Expected value of newstring is "ORANGE".
+ * Expected value of newstring is "ORANGE".
  */
 export function toUppercase(str: string): string {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
@@ -110,11 +105,10 @@ export function toUppercase(str: string): string {
  *
  * @param value Value to convert into string.
  * @returns New string.
- *
- * <h3>Example:</h3>
- * <code>value = [500,800]<br/>
- * newstring = str.Modify.toUppercase(value)<br/></code>
- * <br/>Expected value of newstring is "500,800".
+ * @example value = [500,800]
+ * newstring = str.Modify.toUppercase(value)
+ * 
+ * Expected value of newstring is "500,800".
  */
 export function toString(value: any): string {
     if (value === undefined) {throw new Error("Invalid arg: value must be defined.");}

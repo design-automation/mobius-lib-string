@@ -51,7 +51,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Checks if a string ends with a specified end string.",
-								"returns": "True if str ends with search_str, false otherwise.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nresult = str.Eval.endsWith(string,\"ge\")<br/></code>\n<br/>Expected value of result is true.\n"
+								"returns": "True if str ends with search_str, false otherwise.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nresult = str.Eval.endsWith(string,\"ge\")\n\nExpected value of result is true.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -92,7 +98,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 51,
+							"line": 47,
 							"character": 24
 						}
 					]
@@ -114,7 +120,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Checks if a string contains a specified search string.",
-								"returns": "True if str contains search_str, false otherwise.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nincl = str.Eval.includes(string,\"an\")<br/></code>\n<br/>Expected value of incl is true.\n"
+								"returns": "True if str contains search_str, false otherwise.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nincl = str.Eval.includes(string,\"an\")\n\nExpected value of incl is true.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -155,7 +167,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 69,
+							"line": 64,
 							"character": 24
 						}
 					]
@@ -177,7 +189,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Returns the position index of the first occurance of the specified search string within a string.\nIf the specified sub-string cannot be found, then returns -1.",
-								"returns": "Number that represents first position of search_str in str.\n\n<h3>Example:</h3>\n<code>string = \"Banana\"<br/>\nsearch = str.Eval.indexOf(string,\"a\")<br/></code>\n<br/>Expected value of search is 1.\n"
+								"returns": "Number that represents first position of search_str in str.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Banana\"\nsearch = str.Eval.indexOf(string,\"a\")\n\nExpected value of search is 1.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -218,7 +236,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 124,
+							"line": 116,
 							"character": 23
 						}
 					]
@@ -240,7 +258,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Returns the position index of the last occurance of the specified search string within a string.\nIf the specified sub-string cannot be found, then returns -1.\n(The string is searched starting from its end)",
-								"returns": "Number that represents last position of search_str in str.\n\n<h3>Example:</h3>\n<code>string = \"Banana\"<br/>\nsearch = str.Eval.lastIndexOf(string,\"a\")<br/></code>\n<br/>Expected value of search is 5.\n"
+								"returns": "Number that represents last position of search_str in str.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Banana\"\nsearch = str.Eval.lastIndexOf(string,\"a\")\n\nExpected value of search is 5.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -281,7 +305,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 144,
+							"line": 135,
 							"character": 27
 						}
 					]
@@ -303,7 +327,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Returns the number of characters in a string.",
-								"returns": "Length of string.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nlength = str.Eval.len(string)<br/></code>\n<br/>Expected value of length is 6.\n"
+								"returns": "Length of string.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nlength = str.Eval.len(string)\n\nExpected value of length is 6.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -330,7 +360,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 86,
+							"line": 80,
 							"character": 19
 						}
 					]
@@ -352,7 +382,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Compares two strings in the current locale (language setting).\n(In general, the order is as follows: digits (0-9), upper-case (A-Z), then lower-case (a-z))",
-								"returns": "Number indicating whether str comes before or after comp_str in sort order. (-1: before, 0: equal, 1: after)\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\ncomp_str = \"Apple\"<br/>\ncomp = str.Eval.localeCompare(string,comp_str)<br/></code>\n<br/>Expected value of comp is 1.\n"
+								"returns": "Number indicating whether str comes before or after comp_str in sort order. (-1: before, 0: equal, 1: after)",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\ncomp_str = \"Apple\"\ncomp = str.Eval.localeCompare(string,comp_str)\n\nExpected value of comp is 1.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -393,7 +429,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 164,
+							"line": 154,
 							"character": 29
 						}
 					]
@@ -415,7 +451,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Returns the position index of the first occurance of the specified search string within a string.\nIf the specified sub-string cannot be found, then returns -1.\n(This function uses regular expressions, if searching using a string, use str.Eval.indexOf)",
-								"returns": "Number that represents first position of search_str in str.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nsearch = str.Eval.search(string,\"e\")<br/></code>\n<br/>Expected value of search is 5.\n"
+								"returns": "Number that represents first position of search_str in str.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nsearch = str.Eval.search(string,\"e\")\n\nExpected value of search is 5.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -456,7 +498,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 105,
+							"line": 98,
 							"character": 22
 						}
 					]
@@ -478,7 +520,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Checks if a string starts with the specified start string.",
-								"returns": "True if str starts with search_str, false otherwise.\n\n<h3>Example:</h3>\n<code>\nstring = \"Orange\"<br/>\nresult = str.Eval.startsWith(string,\"Or\")<br/>\n</code>\n<br/>Expected value of result is true.\n"
+								"returns": "True if str starts with search_str, false otherwise.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nresult = str.Eval.startsWith(string,\"Or\")\n\nExpected value of result is true.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -519,7 +567,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 33,
+							"line": 30,
 							"character": 26
 						}
 					]
@@ -871,7 +919,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Searches for and replaces the specified search string in a string.\nThe search string can also be a regular expression.",
-								"returns": "New string with replaced characters.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nnewString = str.Modify.Replace(string,\"O\",\"Ar\")<br/></code>\n<br/>Expected value of newString is \"Arrange\".\n"
+								"returns": "New string with replaced characters.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nnewString = str.Modify.Replace(string,\"O\",\"Ar\")\n\nExpected value of newString is \"Arrange\".\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -926,7 +980,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 32,
+							"line": 31,
 							"character": 23
 						}
 					]
@@ -948,7 +1002,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Splits a string into a list of substrings using a specified separator string.",
-								"returns": "List of substrings.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nsplit = str.Modify.split(string,\"a\")<br/></code>\n<br/>Expected value of split is [\"Or\",\"nge\"].\n"
+								"returns": "List of substrings.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nsplit = str.Modify.split(string,\"a\")\n\nExpected value of split is [\"Or\",\"nge\"].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -992,7 +1052,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 51,
+							"line": 49,
 							"character": 21
 						}
 					]
@@ -1014,7 +1074,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Extracts characters in a string between two specified indices and returns it as a new string.\nStart index is inclusive and end index is exclusive.",
-								"returns": "New string with extracted characters.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nsubstring = str.Modify.substring(string,1,4)<br/></code>\n<br/>Expected value of substring is \"ran\".\n"
+								"returns": "New string with extracted characters.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nsubstring = str.Modify.substring(string,1,4)\n\nExpected value of substring is \"ran\".\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1069,7 +1135,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 71,
+							"line": 68,
 							"character": 25
 						}
 					]
@@ -1091,7 +1157,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Converts a string to lowercase letters.",
-								"returns": "New string with lowercase characters.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nnewstring = str.Modify.toLowercase(string)<br/></code>\n<br/>Expected value of newstring is \"orange\".\n"
+								"returns": "New string with lowercase characters.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nnewstring = str.Modify.toLowercase(string)\n\nExpected value of newstring is \"orange\".\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1118,7 +1190,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 87,
+							"line": 83,
 							"character": 27
 						}
 					]
@@ -1140,7 +1212,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Converts a value into a string.",
-								"returns": "New string.\n\n<h3>Example:</h3>\n<code>value = [500,800]<br/>\nnewstring = str.Modify.toUppercase(value)<br/></code>\n<br/>Expected value of newstring is \"500,800\".\n"
+								"returns": "New string.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "value = [500,800]\nnewstring = str.Modify.toUppercase(value)\n\nExpected value of newstring is \"500,800\".\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1167,7 +1245,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 119,
+							"line": 113,
 							"character": 24
 						}
 					]
@@ -1189,7 +1267,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Converts a string to uppercase letters.",
-								"returns": "New string with uppercase characters.\n\n<h3>Example:</h3>\n<code>string = \"Orange\"<br/>\nnewstring = str.Modify.toUppercase(string)<br/></code>\n<br/>Expected value of newstring is \"ORANGE\".\n"
+								"returns": "New string with uppercase characters.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "string = \"Orange\"\nnewstring = str.Modify.toUppercase(string)\n\nExpected value of newstring is \"ORANGE\".\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1216,7 +1300,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 103,
+							"line": 98,
 							"character": 27
 						}
 					]
