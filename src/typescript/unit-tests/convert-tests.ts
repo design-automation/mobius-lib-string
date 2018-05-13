@@ -8,10 +8,16 @@ describe("Tests for convert module", () => {
 });
 
 export function test_prop_setValues(): boolean {
-    const strs: string[] = ["123", "456.7", "dhfjdh"];
-    const result1: number[] = tm.convert.toFloats(strs, false);
-    console.log(result1);
-    const result2: number[] = tm.convert.toInts(strs, false);
-    console.log(result2);
+    const strs: string[] = ["123", "456.7", "test"];
+    const result1 = tm.convert.toFloats(strs, true);
+    if (result1[0] != 123) {return false;}
+    if (result1[1] != 456.7) {return false;}
+    if (result1[2] != 0) {return false;}
+    //console.log(result1);
+    const result2 = tm.convert.toInts(strs, false);
+    if (result2[0] != 123) {return false;}
+    if (result2[1] != 456) {return false;}
+    if (result2[2] != "test") {return false;}
+    //console.log(result2);
     return true;
 }

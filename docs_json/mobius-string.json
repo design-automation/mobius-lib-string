@@ -12,7 +12,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/_export.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/_export.ts",
 			"sources": [
 				{
 					"fileName": "_export.ts",
@@ -29,7 +29,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/analyse.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/analyse.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
@@ -605,7 +605,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/convert.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/convert.ts",
 			"comment": {
 				"shortText": "Functions for converting strings to other types."
 			},
@@ -626,8 +626,9 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Converts a string to a floating point number.\nWill return NaN is the string cannot be converted.\nhttps://www.w3schools.com/jsref/jsref_parsefloat.asp",
-								"returns": "Floating point number.\n\n"
+								"shortText": "Converts a string to a floating point number.",
+								"text": "See [https://www.w3schools.com/jsref/jsref_parsefloat.asp](https://www.w3schools.com/jsref/jsref_parsefloat.asp)\n",
+								"returns": "Floating point number, or input string.\n\n"
 							},
 							"parameters": [
 								{
@@ -651,7 +652,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "boolean, if true then zero will be returned\nif the string cannot be converted to a number."
+										"text": "boolean, controlling what to do when the value cannot be converted.\nIf defaultZero is true, then the value will default to 0.0.\nIf defaultZero is false, then the value will remain unchanged (as a string)."
 									},
 									"type": {
 										"type": "intrinsic",
@@ -660,15 +661,24 @@
 								}
 							],
 							"type": {
-								"type": "intrinsic",
-								"name": "number"
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "convert.ts",
-							"line": 20,
+							"line": 21,
 							"character": 23
 						}
 					]
@@ -689,8 +699,14 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Converts an array of strings to floating point numbers.\nhttps://www.w3schools.com/jsref/jsref_parsefloat.asp",
-								"returns": "An array of floating point numbers.\n\n"
+								"shortText": "Converts an array of strings to floating point numbers.",
+								"returns": "An array of floating point numbers, or strings.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\ndata = [\"10.12\",\"20.34\",\"30.56\", \"some_text\"]\nresult1 = str.convert.toInts(data, true)\n//result1 will be [10, 20, 30, 0]\nresult2 = str.convert.toInts(data, true)\n//result2 will be [10.12, 20.34, 30.56, \"some_text\"]\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -714,7 +730,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "boolean, if true then any value that cannot be converted to a number\nwill be set to zero."
+										"text": "boolean, controlling what to do when a value cannot be converted.\nIf defaultZero is true, then the value will default to 0.\nIf defaultZero is false, then the value will remain unchanged (as a string)."
 									},
 									"type": {
 										"type": "intrinsic",
@@ -725,8 +741,17 @@
 							"type": {
 								"type": "array",
 								"elementType": {
-									"type": "intrinsic",
-									"name": "number"
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
 								}
 							}
 						}
@@ -734,7 +759,7 @@
 					"sources": [
 						{
 							"fileName": "convert.ts",
-							"line": 55,
+							"line": 64,
 							"character": 24
 						}
 					]
@@ -755,8 +780,9 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Converts a string to an integer number.\nWill return NaN is the string cannot be converted.\nhttps://www.w3schools.com/jsref/jsref_parseint.asp",
-								"returns": "Integer number.\n\n"
+								"shortText": "Converts a string to an integer number.",
+								"text": "See [https://www.w3schools.com/jsref/jsref_parseint.asp](https://www.w3schools.com/jsref/jsref_parseint.asp)\n",
+								"returns": "Integer number, or input string.\n\n"
 							},
 							"parameters": [
 								{
@@ -780,7 +806,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "boolean, if true then zero will be returned\nif the string cannot be converted to a number."
+										"text": "boolean, controlling what to do when a value cannot be converted.\nIf defaultZero is true, then the value will default to 0.\nIf defaultZero is false, then the value will remain unchanged (as a string)."
 									},
 									"type": {
 										"type": "intrinsic",
@@ -789,15 +815,24 @@
 								}
 							],
 							"type": {
-								"type": "intrinsic",
-								"name": "number"
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "convert.ts",
-							"line": 38,
+							"line": 41,
 							"character": 21
 						}
 					]
@@ -818,8 +853,14 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Converts an array of strings to integer numbers.\nhttps://www.w3schools.com/jsref/jsref_parseint.asp",
-								"returns": "An array of integer numbers.\n\n"
+								"shortText": "Converts an array of strings to integer numbers.",
+								"returns": "An array of integer numbers, or strings.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\ndata = [\"10\",\"20\",\"30\", \"some_text\"]\nresult1 = str.convert.toInts(data, true)\n//result1 will be [10, 20, 30, 0]\nresult2 = str.convert.toInts(data, true)\n//result2 will be [10, 20, 30, \"some_text\"]\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -843,7 +884,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "boolean, if true then any value that cannot be converted to a number\nwill be set to zero."
+										"text": "boolean, controlling what to do when a value cannot be converted.\nIf defaultZero is true, then the value will default to 0.\nIf defaultZero is false, then the value will remain unchanged (as a string)."
 									},
 									"type": {
 										"type": "intrinsic",
@@ -854,8 +895,17 @@
 							"type": {
 								"type": "array",
 								"elementType": {
-									"type": "intrinsic",
-									"name": "number"
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
 								}
 							}
 						}
@@ -863,7 +913,7 @@
 					"sources": [
 						{
 							"fileName": "convert.ts",
-							"line": 70,
+							"line": 84,
 							"character": 22
 						}
 					]
@@ -897,7 +947,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-string/src/typescript/modify.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/modify.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
