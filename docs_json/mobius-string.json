@@ -12,7 +12,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/_export.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/_export.ts",
 			"sources": [
 				{
 					"fileName": "_export.ts",
@@ -23,13 +23,13 @@
 		},
 		{
 			"id": 1,
-			"name": "\"analyse\"",
+			"name": "\"calc\"",
 			"kind": 1,
 			"kindString": "External module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/analyse.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/calc.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
@@ -97,7 +97,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 47,
 							"character": 24
 						}
@@ -166,7 +166,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 64,
 							"character": 24
 						}
@@ -235,7 +235,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 116,
 							"character": 23
 						}
@@ -304,7 +304,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 135,
 							"character": 27
 						}
@@ -359,7 +359,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 80,
 							"character": 19
 						}
@@ -428,7 +428,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 154,
 							"character": 29
 						}
@@ -497,7 +497,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 98,
 							"character": 22
 						}
@@ -566,7 +566,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 30,
 							"character": 26
 						}
@@ -591,7 +591,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "analyse.ts",
+					"fileName": "calc.ts",
 					"line": 1,
 					"character": 0
 				}
@@ -599,13 +599,13 @@
 		},
 		{
 			"id": 33,
-			"name": "\"convert\"",
+			"name": "\"create\"",
 			"kind": 1,
 			"kindString": "External module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/convert.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/create.ts",
 			"comment": {
 				"shortText": "Functions for converting strings to other types."
 			},
@@ -677,7 +677,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "convert.ts",
+							"fileName": "create.ts",
 							"line": 21,
 							"character": 23
 						}
@@ -758,7 +758,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "convert.ts",
+							"fileName": "create.ts",
 							"line": 64,
 							"character": 24
 						}
@@ -831,7 +831,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "convert.ts",
+							"fileName": "create.ts",
 							"line": 41,
 							"character": 21
 						}
@@ -912,7 +912,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "convert.ts",
+							"fileName": "create.ts",
 							"line": 84,
 							"character": 22
 						}
@@ -933,7 +933,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "convert.ts",
+					"fileName": "create.ts",
 					"line": 1,
 					"character": 0
 				}
@@ -947,7 +947,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/modify.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/modify.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},

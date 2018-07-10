@@ -1,8 +1,8 @@
 import * as modify from "./modify";
 export {modify};
 
-import * as analyse from "./analyse";
-export {analyse};
+import * as calc from "./calc";
+export {calc};
 
-import * as convert from "./convert";
-export {convert};
+import * as create from "./create";
+export {create};
