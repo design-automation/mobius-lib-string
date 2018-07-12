@@ -63,7 +63,7 @@ export function intByString(str: string, defaultZero: boolean): (number|string) 
  */
 export function floatsByString(strs: string[], defaultZero: boolean): (number|string)[] {
     if (!Array.isArray(strs)) {throw new Error("Invalid arg: strs must be an array of strings.");}
-    return strs.map((str) => toFloat(str, defaultZero));
+    return strs.map((str) => floatsByString(str, defaultZero));
 }
 
 /**
@@ -83,7 +83,7 @@ export function floatsByString(strs: string[], defaultZero: boolean): (number|st
  */
 export function intsByString(strs: string[], defaultZero: boolean): (number|string)[] {
     if (!Array.isArray(strs)) {throw new Error("Invalid arg: strs must be an array of strings.");}
-    return strs.map((str) => toInt(str, defaultZero));
+    return strs.map((str) => intsByString(str, defaultZero));
 }
 
 // moved from modify: *****************************************************************************************************************************************************
@@ -183,7 +183,7 @@ export function uppCaseByString(str: string): string {
  * 
  * Expected value of newstring is "500,800".
  */
-export function stringByConvert(value: any): string {
+export function byConvert(value: any): string {
     if (value === undefined) {throw new Error("Invalid arg: value must be defined.");}
     return value.toString();
 }
