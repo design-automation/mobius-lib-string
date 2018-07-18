@@ -24,7 +24,7 @@
  * @returns True if str starts with search_str, false otherwise.
  * @example string = "Orange"
  * result = str.Eval.startsWith(string,"Or")
- * 
+ *
  * Expected value of result is true.
  */
 export function startsWith(str: string, start_str: string): boolean {
@@ -58,7 +58,7 @@ export function endsWith(str: string, end_str: string): boolean {
  * @returns True if str contains search_str, false otherwise.
  * @example string = "Orange"
  * incl = str.Eval.includes(string,"an")
- * 
+ *
  * Expected value of incl is true.
  */
 export function includes(str: string, search_str: string): boolean {
@@ -74,7 +74,7 @@ export function includes(str: string, search_str: string): boolean {
  * @returns Length of string.
  * @example string = "Orange"
  * length = str.Eval.len(string)
- * 
+ *
  * Expected value of length is 6.
  */
 export function len(str: string): number {
@@ -92,7 +92,7 @@ export function len(str: string): number {
  * @returns Number that represents first position of search_str in str.
  * @example string = "Orange"
  * search = str.Eval.search(string,"e")
- * 
+ *
  * Expected value of search is 5.
  */
 export function search(str: string, search_str: string): number {
@@ -110,7 +110,7 @@ export function search(str: string, search_str: string): number {
  * @returns Number that represents first position of search_str in str.
  * @example string = "Banana"
  * search = str.Eval.indexOf(string,"a")
- * 
+ *
  * Expected value of search is 1.
  */
 export function indexOf(str: string, search_str: string): number {
@@ -129,7 +129,7 @@ export function indexOf(str: string, search_str: string): number {
  * @returns Number that represents last position of search_str in str.
  * @example string = "Banana"
  * search = str.Eval.lastIndexOf(string,"a")
- * 
+ *
  * Expected value of search is 5.
  */
 export function lastIndexOf(str: string, search_str: string): number {
