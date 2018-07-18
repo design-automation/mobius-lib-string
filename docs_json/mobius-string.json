@@ -12,7 +12,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/_export.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/_export.ts",
 			"sources": [
 				{
 					"fileName": "_export.ts",
@@ -29,7 +29,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/calc.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/calc.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
@@ -605,7 +605,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/create.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/create.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
@@ -1356,13 +1356,13 @@
 		},
 		{
 			"id": 73,
-			"name": "\"modify-old\"",
+			"name": "\"old/modify-old\"",
 			"kind": 1,
 			"kindString": "External module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-string/src/typescript/modify-old.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-string/src/typescript/old/modify-old.ts",
 			"comment": {
 				"shortText": "Functions for ..."
 			},
@@ -1444,7 +1444,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify-old.ts",
+							"fileName": "old/modify-old.ts",
 							"line": 31,
 							"character": 23
 						}
@@ -1516,7 +1516,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify-old.ts",
+							"fileName": "old/modify-old.ts",
 							"line": 49,
 							"character": 21
 						}
@@ -1599,7 +1599,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify-old.ts",
+							"fileName": "old/modify-old.ts",
 							"line": 68,
 							"character": 25
 						}
@@ -1654,7 +1654,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify-old.ts",
+							"fileName": "old/modify-old.ts",
 							"line": 83,
 							"character": 27
 						}
@@ -1709,7 +1709,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify-old.ts",
+							"fileName": "old/modify-old.ts",
 							"line": 113,
 							"character": 24
 						}
@@ -1764,7 +1764,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify-old.ts",
+							"fileName": "old/modify-old.ts",
 							"line": 98,
 							"character": 27
 						}
@@ -1787,7 +1787,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "modify-old.ts",
+					"fileName": "old/modify-old.ts",
 					"line": 1,
 					"character": 0
 				}

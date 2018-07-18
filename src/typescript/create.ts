@@ -40,7 +40,7 @@ export function toFloat(str: string, defaultZero: boolean): (number|string) {
  */
 export function toInt(str: string, defaultZero: boolean): (number|string) {
     if (str === undefined) {throw new Error("Invalid arg: str must be defined.");}
-    const result: number = parseInt(str);
+    const result: number = parseInt(str,10);
     if (isNaN(result) && defaultZero) {return 0.0;}
     if (isNaN(result) && !defaultZero) {return str;}
     return result;
